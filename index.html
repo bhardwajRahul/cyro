@@ -1,462 +1,240 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-      <meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Responsive Admin</title>
-	<!-- BOOTSTRAP STYLES-->
+    <!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
-     <!-- FONTAWESOME STYLES-->
+    <!-- FONTAWESOME STYLES-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
-        <!-- CUSTOM STYLES-->
+    <!-- CUSTOM STYLES-->
     <link href="assets/css/custom.css" rel="stylesheet" />
-     <!-- GOOGLE FONTS-->
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
 </head>
+
 <body>
-     
-           
-          
-    <div id="wrapper">
-         <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="adjust-nav">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/img/logo.png" />
 
-                    </a>
-                    
-                </div>
-              
-                <span class="logout-spn" >
-                  <a href="#" style="color:#fff;">LOGOUT</a>  
-
-                </span>
-            </div>
-        </div>
-        <!-- /. NAV TOP  -->
-        <nav class="navbar-default navbar-side" role="navigation">
-            <div class="sidebar-collapse">
-                <ul class="nav" id="main-menu">
-                 
-
-
-                    <li class="active-link">
-                        <a href="index.html" ><i class="fa fa-desktop "></i>Dashboard <span class="badge">Included</span></a>
-                    </li>
-                   
-
-                    <li>
-                        <a href="ui.html"><i class="fa fa-table "></i>UI Elements  <span class="badge">Included</span></a>
-                    </li>
-                    <li>
-                        <a href="blank.html"><i class="fa fa-edit "></i>Blank Page  <span class="badge">Included</span></a>
-                    </li>
-
-
-                    <li>
-                        <a href="#"><i class="fa fa-qrcode "></i>My Link One</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-bar-chart-o"></i>My Link Two</a>
-                    </li>
-
-                    <li>
-                        <a href="#"><i class="fa fa-edit "></i>My Link Three </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-table "></i>My Link Four</a>
-                    </li>
-                     <li>
-                        <a href="#"><i class="fa fa-edit "></i>My Link Five </a>
-                    </li>
-                    
-                </ul>
+        <div class="header">
+                
+                
+                        <div class="row">
+                            <div class="col-lg-12">
+                                    <script type="text/javascript">
+                                        baseUrl = "https://widgets.cryptocompare.com/";
+                                        var scripts = document.getElementsByTagName("script");
+                                        var embedder = scripts[ scripts.length - 1 ];
+                                        var cccTheme = {"General":{"enableMarquee":true}};
+                                        (function (){
+                                        var appName = encodeURIComponent(window.location.hostname);
+                                        if(appName==""){appName="local";}
+                                        var s = document.createElement("script");
+                                        s.type = "text/javascript";
+                                        s.async = true;
+                                        var theUrl = baseUrl+'serve/v3/coin/header?fsyms=OMG,BCCOIN,LSK,QTUM&tsyms=BTC,USD,EUR,INR,GOLD';
+                                        s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+                                        embedder.parentNode.appendChild(s);
+                                        })();
+                                        </script>
+                                        
                             </div>
+                        </div>
+                    </div>
+    <div id="wrapper">
 
-        </nav>
         <!-- /. NAV SIDE  -->
-        <div id="page-wrapper" >
+        <div id="page-wrapper">
             <div id="page-inner">
                 <div class="row">
-                    <div class="col-lg-12">
-                     <h2>ADMIN DASHBOARD</h2>   
+                    <div class="col-md-12">
+                        <h2 style="border-bottom:solid;border-width:1px;">Top 10 Cryptocurrency </h2>
                     </div>
-                </div>              
-                 <!-- /. ROW  -->
-                  <hr />
-                <div class="row">
-                    <div class="col-lg-12 ">
-                        <div class="alert alert-info">
-                             <strong>Welcome Jhon Doe ! </strong> You Have No pending Task For Today.
-                        </div>
-                       
-                    </div>
-                    </div>
-                  <!-- /. ROW  --> 
-                            <div class="row text-center pad-top">
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-circle-o-notch fa-5x"></i>
-                      <h4>Check Data</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div> 
-                 
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-envelope-o fa-5x"></i>
-                      <h4>Mail Box</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-lightbulb-o fa-5x"></i>
-                      <h4>New Issues</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-users fa-5x"></i>
-                      <h4>See Users</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-key fa-5x"></i>
-                      <h4>Admin </h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-comments-o fa-5x"></i>
-                      <h4>Support</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-              </div>
-                 <!-- /. ROW  --> 
-                <div class="row text-center pad-top">
-                 
-                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-clipboard fa-5x"></i>
-                      <h4>All Docs</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-gear fa-5x"></i>
-                      <h4>Settings</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-wechat fa-5x"></i>
-                      <h4>Live Talk</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-bell-o fa-5x"></i>
-                      <h4>Notifications </h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-rocket fa-5x"></i>
-                      <h4>Launch</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-user fa-5x"></i>
-                      <h4>Register User</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div> 
-              </div>   
-                  <!-- /. ROW  -->    
-                 <div class="row text-center pad-top">
-                   
-                 
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-envelope-o fa-5x"></i>
-                      <h4>Mail Box</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-lightbulb-o fa-5x"></i>
-                      <h4>New Issues</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-users fa-5x"></i>
-                      <h4>See Users</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-key fa-5x"></i>
-                      <h4>Admin </h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="#" >
- <i class="fa fa-comments-o fa-5x"></i>
-                      <h4>Support</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-circle-o-notch fa-5x"></i>
-                      <h4>Check Data</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-              </div>
-                 <!-- /. ROW  -->  
-                 <div class="row text-center pad-top">
-                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-rocket fa-5x"></i>
-                      <h4>Launch</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-clipboard fa-5x"></i>
-                      <h4>All Docs</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-gear fa-5x"></i>
-                      <h4>Settings</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-wechat fa-5x"></i>
-                      <h4>Live Talk</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-bell-o fa-5x"></i>
-                      <h4>Notifications </h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  
-                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-user fa-5x"></i>
-                      <h4>Register User</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div> 
-              </div>   
-                  <!-- /. ROW  -->  
-                <div class="row text-center pad-top">
-                   
-                 
-                  
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-lightbulb-o fa-5x"></i>
-                      <h4>New Issues</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-users fa-5x"></i>
-                      <h4>See Users</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-key fa-5x"></i>
-                      <h4>Admin </h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-comments-o fa-5x"></i>
-                      <h4>Support</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-circle-o-notch fa-5x"></i>
-                      <h4>Check Data</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="blank.html" >
- <i class="fa fa-envelope-o fa-5x"></i>
-                      <h4>Mail Box</h4>
-                      </a>
-                      </div>
-                     
-                     
-                  </div>
-              </div>
-                 <!-- /. ROW  -->   
-				  <div class="row">
-                    <div class="col-lg-12 ">
-					<br/>
-                        <div class="alert alert-danger">
-                             <strong>Want More Icons Free ? </strong> Checkout fontawesome website and use any icon <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">Click Here</a>.
-                        </div>
-                       
-                    </div>
-                    </div>
-                  <!-- /. ROW  --> 
-    </div>
-             <!-- /. PAGE INNER  -->
-            </div>
-         <!-- /. PAGE WRAPPER  -->
-        </div>
-    <div class="footer">
-      
-    
-            <div class="row">
-                <div class="col-lg-12" >
-                    &copy;  2014 yourdomain.com | Design by: <a href="http://binarytheme.com" style="color:#fff;" target="_blank">www.binarytheme.com</a>
+                    
                 </div>
+                <!-- /. ROW  -->
+                <div class="row text-center pad-top">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                        <div class="div-square">
+                            <div class="coinmarketcap-currency-widget" data-currency="bitcoin" data-base="INR" data-secondary="USD" data-ticker="true"
+                                data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                        <div class="div-square">
+                            <div class="coinmarketcap-currency-widget" data-currency="ethereum" data-base="INR" data-secondary="USD" data-ticker="true"
+                                data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                        <div class="div-square">
+                                <div class="coinmarketcap-currency-widget" data-currency="bitcoin-cash" data-base="INR" data-secondary="USD" data-ticker="true"
+                                    data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                        <div class="div-square">
+                                <div class="coinmarketcap-currency-widget" data-currency="ripple" data-base="INR" data-secondary="USD" data-ticker="true"
+                                    data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                        <div class="div-square">
+                                <div class="coinmarketcap-currency-widget" data-currency="dash" data-base="INR" data-secondary="USD" data-ticker="true"
+                                    data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                            <div class="div-square">
+                                    <div class="coinmarketcap-currency-widget" data-currency="litecoin" data-base="INR" data-secondary="USD" data-ticker="true"
+                                        data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>
+                            </div>
+    
+    
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                                <div class="div-square">
+                                        <div class="coinmarketcap-currency-widget" data-currency="nem" data-base="INR" data-secondary="USD" data-ticker="true"
+                                            data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>
+                                </div>
+        
+        
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                                    <div class="div-square">
+                                            <div class="coinmarketcap-currency-widget" data-currency="iota" data-base="INR" data-secondary="USD" data-ticker="true"
+                                                data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>
+                                    </div>
+            
+            
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                                        <div class="div-square">
+                                                <div class="coinmarketcap-currency-widget" data-currency="monero" data-base="INR" data-secondary="USD" data-ticker="true"
+                                                data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>    
+                                        </div>
+                                 </div>
+                    
+                                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                                        <div class="div-square">
+                                                <div class="coinmarketcap-currency-widget" data-currency="neo" data-base="INR" data-secondary="USD" data-ticker="true"
+                                                data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>    
+                                        </div>
+                                 </div>
+                            </div>
+                <!-- /. ROW  -->
+                <div class="row">
+                        <div class="col-md-12">
+                            <h2 style="border-bottom:solid;border-width:1px;">Some <a href="https://minergate.com/a/921b71333304bdb196ccda26" style="color: inherit;
+                                text-decoration: none;" target="_blank">Minergate</a> Cryptocurrency </h2>
+                        </div>
+                        
+                    </div>
+                <div class="row text-center pad-top">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                                <div class="div-square">
+                                        <div class="coinmarketcap-currency-widget" data-currency="aeon" data-base="INR" data-secondary="USD" data-ticker="true"
+                                        data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>    
+                                </div>
+                         </div>
+                         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                                <div class="div-square">
+                                        <div class="coinmarketcap-currency-widget" data-currency="bytecoin-bcn" data-base="INR" data-secondary="USD" data-ticker="true"
+                                        data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>    
+                                </div>
+                         </div>
+                         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                                <div class="div-square">
+                                        <div class="coinmarketcap-currency-widget" data-currency="fantomcoin" data-base="INR" data-secondary="USD" data-ticker="true"
+                                        data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>    
+                                </div>
+                         </div>
+                         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                                <div class="div-square">
+                                        <div class="coinmarketcap-currency-widget" data-currency="digitalnote" data-base="INR" data-secondary="USD" data-ticker="true"
+                                        data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>    
+                                </div>
+                         </div>
+                         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                                <div class="div-square">
+                                        <div class="coinmarketcap-currency-widget" data-currency="quazarcoin" data-base="INR" data-secondary="USD" data-ticker="true"
+                                        data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>    
+                                </div>
+                         </div>
+                         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                                <div class="div-square">
+                                        <div class="coinmarketcap-currency-widget" data-currency="ethereum-classic" data-base="INR" data-secondary="USD" data-ticker="true"
+                                        data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>    
+                                </div>
+                         </div>
+                         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-9">
+                                <div class="div-square">
+                                        <div class="coinmarketcap-currency-widget" data-currency="zcash" data-base="INR" data-secondary="USD" data-ticker="true"
+                                        data-rank="true" data-marketcap="true" data-volume="true" data-stats="INR" data-statsticker="true"></div>    
+                                </div>
+                         </div>
+                 
+                </div>
+                <!-- /. ROW  -->
+                <div class="row">
+                        <div class="col-md-12">
+                                <h2 style="border-bottom:solid;border-width:1px;">Monero Monitoring Dash </h2>
+                            </div> 
+                </div>
+                <div class="row text-center pad-top">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <script type="text/javascript">
+                                    baseUrl = "https://widgets.cryptocompare.com/";
+                                    var scripts = document.getElementsByTagName("script");
+                                    var embedder = scripts[ scripts.length - 1 ];
+                                    (function (){
+                                    var appName = encodeURIComponent(window.location.hostname);
+                                    if(appName==""){appName="local";}
+                                    var s = document.createElement("script");
+                                    s.type = "text/javascript";
+                                    s.async = true;
+                                    var theUrl = baseUrl+'serve/v3/coin/chart?fsym=XMR&tsyms=USD,EUR,CNY,GBP,INR';
+                                    s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+                                    embedder.parentNode.appendChild(s);
+                                    })();
+                                    </script>
+                                    
+                        </div>
+                        
+                         
+                </div>
+                <!-- /. ROW  -->
+                
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <div class="footer">
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <a href="https://changelly.com/?ref_id=02f1a41070a1" style="color:#fff;" target="_blank">www.changelly.com</a>
             </div>
         </div>
-          
+    </div>
 
-     <!-- /. WRAPPER  -->
+
+    <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
     <script src="assets/js/jquery-1.10.2.js"></script>
-      <!-- BOOTSTRAP SCRIPTS -->
+    <!-- BOOTSTRAP SCRIPTS -->
     <script src="assets/js/bootstrap.min.js"></script>
-      <!-- CUSTOM SCRIPTS -->
+    <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
-    
-   
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+
 </body>
+
 </html>
